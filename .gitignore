@@ -1,0 +1,41 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Ignore environment files (if applicable)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore logs
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore build files
+dist/
+build/
+out/
+
+# Ignore editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore temporary files
+*.bak
+*.tmp
+*.cache
+
+# Ignore OneDrive temporary files
+~$*
