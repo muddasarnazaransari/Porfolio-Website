@@ -121,21 +121,21 @@ body
 .header-text
 {
     color: white;
-    margin-top: 15%;
-    margin-left: 23%;
+    margin-top: 13%;
+    margin-left: 13%;
     font-size: 30;
 }
 
 .header-text h1
 {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(30px, 6vw, 80px);
+    font-size: 100px
 }
 
 .header-text p
 {
     font-family: 'Poppins', sans-serif;
-    font-size: 35px;
+    font-size: 60px;
 }
 
 .header-text h1 .name
