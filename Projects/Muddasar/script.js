@@ -6,6 +6,10 @@ let header = document.querySelector(".header");
 let navBar = document.querySelector(".nav-bar");
 let nav = document.querySelector(".nav");
 let anchor = document.querySelectorAll(".nav-link");
+
+//Hero Section
+let headerText = document.querySelector(".header-text");
+
 let currentMode = "DARK MODE";
 
 function lightTheme()
@@ -16,6 +20,8 @@ function lightTheme()
     body.classList.add("light-body");
     header.classList.add("light-header");
     navBar.classList.add("light-nav");
+
+    headerText.style.color = "black";
 
     anchor.forEach(anchor =>
     {
@@ -33,6 +39,8 @@ function darkTheme()
     body.classList.remove("light-body");
     header.classList.remove("light-header");
     navBar.classList.remove("light-nav");
+
+    headerText.style.color = "white";
 
     anchor.forEach(anchor =>
     {
