@@ -10,13 +10,17 @@
 body
 {
     background-color: white;
-}
-
-header
-{
-    background-image: url("hero-section-bgm-dark.png");
     height: 100vh;
     width: 100%;
+}
+
+.header
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url("hero-section-bgm-dark.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .nav-bar
@@ -113,7 +117,57 @@ header
     color: white;
 }
 
+/*          Hero Section Text          */
+.header-text
+{
+    color: white;
+    margin-top: 15%;
+    margin-left: 23%;
+    font-size: 30;
+}
+
+.header-text h1
+{
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(30px, 6vw, 80px);
+}
+
+.header-text p
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+.header-text h1 .name
+{
+    color: #FFBF00;
+}
+
+.typed-text {
+    font-size: 1em;
+    font-family: monospace;
+    white-space: pre;
+}
+.typed-text::after {
+    content: '|'; /* Or any cursor character */
+    animation: blink 1s infinite step-end;
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 /*Light Mode*/
+.light-header
+{
+    background-image: url("hero-section-bgm-light.png");
+}
+
 .light-body
 {
     background-color: white;
@@ -162,17 +216,46 @@ header
     .nav
     {
         display: flex;
+        position: fixed;
         flex-direction: column;
         align-items: center;
-        position: absolute;
         height: 100vh;
-        width: 50%;
-        background-color: #1E1E1E;
         top: 0;
         right: -50%;
-        padding-top: 28px;
-        transition: right 0.5s ease;
-        z-index: 2;
+        width: 50%;
+        padding-top: 30px;
+        z-index: 1;
     }
 
+    .header
+    {
+        background-image: url("hero-section-mobile-bgm-dark.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .light-header
+    {
+        background-image: url("hero-section-mobile-bgm-light.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /*        Hero Section         */
+    .header-text
+    {
+        margin-top: 20%;
+        margin-left: 6%;
+    }
+
+    .header-text h1
+    {
+        font-size: 65px;
+    }
+
+    .header-text p
+    {
+        font-size: 30px;
+    }
 }
