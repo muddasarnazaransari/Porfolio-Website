@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body
+{
+    background-color: white;
+}
+
+header
+{
+    background-color: black;
+    width: 100%;
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo a
+{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-text
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.logo-icon
+{
+    content: url("dark-logo.png");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.nav
+{
+    display: flex;
+    gap: 4rem;
+}
+
+.menu-open {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.menu-close {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav a
+{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+#mode-open
+{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#mode-close
+{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.uil-sun
+{
+    color: white;
+}
+
+.uil-times
+{
+    font-size: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+}
+
+/*Light Mode*/
+.light-body
+{
+    background-color: white;
+    color: black;
+}
+
+.light-body .logo-icon
+{
+    content: url("light-logo.png");
+}
+
+.light-header
+{
+    background-color: white;
+    color: black;
+}
+
+.anchor-light
+{
+    color: black !important;
+}
+
+.uil-moon
+{
+    color: black;
+}
+
+/*     Responsive Design     */
+@media screen and (max-width : 953px)
+{
+    #mode-button
+    {
+        display: block;
+    }
+
+    .menu-open
+    {
+        display: block;
+    }
+
+    .menu-close
+    {
+        display: block;
+    }
+
+    .mode
+    {
+        display: none;
+    }
+
+    .nav
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        height: 100vh;
+        width: 50%;
+        background-color: #1E1E1E;
+        top: 0;
+        right: -50%;
+        padding-top: 28px;
+        transition: right 0.5s ease;
+        z-index: 2;
+    }
+
+}
