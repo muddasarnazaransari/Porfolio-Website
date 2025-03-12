@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Montserrat:wght@400..800&family=Playfair+Display:wght@400..700&display=swap');
+
 
 *
 {
@@ -162,6 +164,72 @@ body
     }
 }
 
+/*       About Me Section        */
+#about-me
+{
+    background-color: white;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-me .content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+#about-me .content h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    color: #2C3E50
+}
+
+#about-me .about-me-content
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#about-me .about-me-content img
+{
+    border: 10px solid #1C1931;
+    margin-right: 70px;
+    border-radius: 50%;
+}
+
+#about-me .about-me-content img:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+
+#about-me .about-me-content p
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: left;
+    color: #555;
+}
+
+
 /*Light Mode*/
 .light-header
 {
@@ -193,6 +261,29 @@ body
 .uil-moon
 {
     color: black;
+}
+
+
+/*    About section light mode   */
+
+.light-about-me
+{
+    background-color: #1C1931 !important;
+}
+
+.light-about-me h1
+{
+    color: #FFD700  !important;
+}
+
+.light-about-me img
+{
+    border: 10px solid #F4C430  !important;
+}
+
+.light-about-me p
+{
+    color: #EDEDED  !important;
 }
 
 /*     Responsive Design     */
@@ -258,4 +349,33 @@ body
     {
         font-size: 30px;
     }
+
+    /*              About Section              */
+
+    #about-me .content h1
+    {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    #about-me .about-me-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #about-me .about-me-content img
+    {
+        margin-bottom: 70px;
+        margin-left: 75px;
+    }
+
+    #about-me .about-me-content p
+    {
+        font-size: 18px;
+    }
+
 }

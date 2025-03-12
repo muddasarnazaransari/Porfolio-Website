@@ -10,6 +10,9 @@ let anchor = document.querySelectorAll(".nav-link");
 //Hero Section
 let headerText = document.querySelector(".header-text");
 
+//About Me Section
+let aboutMe = document.querySelector("#about-me");
+
 let currentMode = "DARK MODE";
 
 function lightTheme()
@@ -22,6 +25,8 @@ function lightTheme()
     navBar.classList.add("light-nav");
 
     headerText.style.color = "black";
+
+    aboutMe.classList.add("light-about-me");
 
     anchor.forEach(anchor =>
     {
@@ -41,6 +46,8 @@ function darkTheme()
     navBar.classList.remove("light-nav");
 
     headerText.style.color = "white";
+
+    aboutMe.classList.remove("light-about-me");
 
     anchor.forEach(anchor =>
     {
