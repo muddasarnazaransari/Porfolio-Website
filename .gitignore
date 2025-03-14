@@ -39,3 +39,16 @@ out/
 
 # Ignore OneDrive temporary files
 ~$*
+
+# Ignore video files
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.flv
+*.wmv
+*.webm
+*.m4v
+*.mpeg
+*.mpg
+*.3gp
