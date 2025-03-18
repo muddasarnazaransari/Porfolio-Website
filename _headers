@@ -1,0 +1,3 @@
+/Projects/Spotify-Clone/Playlist/*
+  Access-Control-Allow-Origin: *
+  Content-Type: audio/mpeg
