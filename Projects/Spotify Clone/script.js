@@ -1,5 +1,5 @@
 console.log("Let's add some JavaScript");
-console.log(" git attributes addes");
+console.log(" git header file");
 let currentSong = new Audio();
 let currentIndex;
 console.log("song: ", currentSong);
