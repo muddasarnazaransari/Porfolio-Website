@@ -1,4 +1,5 @@
 console.log("Let's add some JavaScript");
+console.log(" git attributes addes");
 let currentSong = new Audio();
 let currentIndex;
 console.log("song: ", currentSong);
@@ -319,6 +320,7 @@ async function main()
         e.addEventListener("click", async items => {
             songs = await getSongs(items.currentTarget.dataset.folder);
             playMusic(0, songs);
+            console.log("Songs From Card : ", songs);
             playButton.style.display = "none";
             pauseButton.style.display = "block";
         })
