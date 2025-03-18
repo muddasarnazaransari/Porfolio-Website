@@ -259,8 +259,13 @@ body{
 
 .card img{
     width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
     border-radius: 5px;
+}
+
+.card p{
+    font-size: 0.8rem;
 }
 
 .play-btn{
@@ -510,7 +515,7 @@ body{
 
 .volume-progress-bar {
     height: 4px;
-    width: 50%;
+    width: 100%;
     background-color: #1ED760;
     border-radius: 2px;
     position: absolute;
